@@ -3,9 +3,10 @@ const temaGuardado = localStorage.getItem("storage");
 
 const selector = document.getElementById("selectorTema");
 
-//Se valida si existe una elección guardad o no
+//Se valida si existe una elección guardada o no
 if (temaGuardado) {
     document.documentElement.setAttribute("data-bs-theme", temaGuardado);
+    //Fuerza al select a mostrar la opción guarda y que se esta aplicando
     selector.value = temaGuardado;
 }
 
